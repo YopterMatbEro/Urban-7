@@ -12,7 +12,7 @@ class Product:
 
 
 class Shop:
-    __file_name = 'products.txt'
+    __file_name = 'text_files/products.txt'
 
     def __init__(self):
         if not os.path.exists(self.__file_name):
