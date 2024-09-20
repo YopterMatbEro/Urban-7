@@ -56,7 +56,7 @@ class WordsFinder:
 
         iterator_words = iter(self.get_all_words_1().items())
         key, value = next(iterator_words)
-        result[key] = value.index(word.lower()) + 1  # индексы с 0 элемента, позиция с 1
+        result[key] = value.index(word.lower()) + 1  # индексы считаются с нулевого элемента, позиция - с первого
         return result
 
     def count(self, word) -> dict:
@@ -69,7 +69,7 @@ class WordsFinder:
 
 
 if __name__ == '__main__':
-    finder2 = WordsFinder('text_files/test_file.txt')
+    finder2 = WordsFinder('test_file.txt')
     print(finder2.get_all_words_1())  # Все слова, первый способ
     print(finder2.get_all_words_2())  # Все слова, второй способ
     print(finder2.find('TEXT'))  # 3 слово по счёту
