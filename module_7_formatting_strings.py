@@ -17,7 +17,7 @@ score1 = 40
 print(f'Команды решили {score1} и {score2} задач.')
 
 challenge_result = 'Волшебники данных'
-print(f'Результат битвы : победа команды {challenge_result}!')
+print(f'Результат битвы: победа команды {challenge_result}!')
 
 tasks_total = sum((score1, score2))
 time_avg = 45.2
