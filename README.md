@@ -14,3 +14,5 @@ ___
 ___
 4. [Форматирование строк](module_7_formatting_strings.py)
 ---
+5. [Работа с файлами в ОС](module_7_files_in_OS.py)
+---
