@@ -6,9 +6,7 @@ directory = '.'
 for root, dirs, files in os.walk(directory):
     if r".\.git" in root or r".\.idea" in root:
         continue
-    print(root)
-    print(dirs)
-    print(files)
+
     for file in files:
         filepath = os.path.join(root, file)
         filetime = os.path.getmtime(filepath)
